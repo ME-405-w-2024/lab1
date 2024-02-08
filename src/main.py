@@ -30,6 +30,8 @@ if __name__ == "__main__":
             time.sleep(1)
             motor.set_duty_cycle(100)
             time.sleep(1)
+            motor.set_duty_cycle(0)
+            time.sleep(1)
             motor.set_duty_cycle(-10)
             time.sleep(1)
             motor.set_duty_cycle(-100)
@@ -38,7 +40,4 @@ if __name__ == "__main__":
     except KeyboardInterrupt:
         motor.set_duty_cycle(0)
         motor.set_enable(0)
-        print("Poop")
-        
-    
-
+        print("Program Ended")
